@@ -1,0 +1,192 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#2c3e50;
+line-height:1.7;
+}
+
+/* NAVBAR */
+.header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(10px);
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+}
+
+.logo span{
+color:#6c5ce7;
+}
+
+.navbar a{
+margin-left:20px;
+text-decoration:none;
+color:#2c3e50;
+font-weight:500;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#6c5ce7;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding-top:80px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#6c5ce7;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* SECTIONS */
+section{
+padding:100px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.stats{
+background:#6c5ce7;
+color:white;
+text-align:center;
+}
+
+.grid-stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+}
+
+.plan{
+background:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.plan.featured{
+background:#6c5ce7;
+color:white;
+transform:scale(1.05);
+}
+
+.plan ul{
+list-style:none;
+margin:20px 0;
+}
+
+.plan ul li{
+margin-bottom:10px;
+}
+
+.contact form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{
+font-size:2.5rem;
+}
+.navbar{
+display:none;
+}
+}
