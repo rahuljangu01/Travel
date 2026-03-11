@@ -101,9 +101,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// ================= SERVICE WORKER REGISTER =================
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('./service-worker.js')
         .then(reg => console.log('Service Worker Registered!', reg))
         .catch(err => console.log('Service Worker Registration Failed!', err));
 }
